@@ -1,0 +1,112 @@
+<h1 class="heading">{{ section.settings.heading_text }}</h1>
+    <div data-w-id="0b548dca-1b35-fb15-4cda-1bad3f1bb37f" class="cards gap-2 pl-4 pr-2 pl-0">
+      {%- if section.settings.card_visibility -%}<div data-w-id="0b548dca-1b35-fb15-4cda-1bad3f1bb380" class="card _w-64">
+        <div class="card-img">{%- if section.settings.advantage_card_image_image == nil -%}<img src="{{ '8ba6a6365ca7ba59d8e53cb38d49af9e2x.png' | asset_url }}" loading="lazy" alt="" sizes="(max-width: 767px) 255.98959350585938px, (max-width: 991px) 28vw, (max-width: 1919px) 29vw, 440.3125305175781px" srcset="{{ '8ba6a6365ca7ba59d8e53cb38d49af9e2x-p-500.png' | asset_url }} 500w, {{ '8ba6a6365ca7ba59d8e53cb38d49af9e2x.png' | asset_url }} 794w" class="advantage-card-image">{%- else -%}<img src="{{ section.settings.advantage_card_image_image.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.advantage_card_image_image.alt | escape }}" class="advantage-card-image">{%- endif -%}</div>
+        <div class="card-text">
+          <h1 class="card-heading advantage-card-heading">{{ section.settings.card_heading_text }}</h1>
+          <a href="{% if section.settings.btn_link %}{{ section.settings.btn_link }}{% else %}#Team-Section{% endif %}" class="btn card-btn w-button">{{ section.settings.btn_text }}</a>
+        </div>
+      </div>{%- endif -%}
+      <div data-w-id="0b548dca-1b35-fb15-4cda-1bad3f1bb38a" class="card _w-64">
+        <div class="card-img">{%- if section.settings.advantage_card_image_image_2 == nil -%}<img src="{{ '3d3551d01af09a75e6ad1b4b516249772x.png' | asset_url }}" loading="lazy" alt="" sizes="(max-width: 767px) 255.98959350585938px, (max-width: 991px) 28vw, (max-width: 1919px) 29vw, 440.3125305175781px" srcset="{{ '3d3551d01af09a75e6ad1b4b516249772x-p-500.png' | asset_url }} 500w, {{ '3d3551d01af09a75e6ad1b4b516249772x.png' | asset_url }} 794w" class="advantage-card-image">{%- else -%}<img src="{{ section.settings.advantage_card_image_image_2.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.advantage_card_image_image_2.alt | escape }}" class="advantage-card-image">{%- endif -%}</div>
+        <div class="card-text">
+          <h1 class="card-heading advantage-card-heading">{{ section.settings.card_heading_text_2 }}</h1>
+          <a href="{% if section.settings.btn_link_2 %}{{ section.settings.btn_link_2 }}{% else %}#Process{% endif %}" class="btn card-btn w-button">{{ section.settings.btn_text_2 }}</a>
+        </div>
+      </div>
+      <div data-w-id="0b548dca-1b35-fb15-4cda-1bad3f1bb394" class="card _w-64">
+        <div class="card-img">{%- if section.settings.advantage_card_image_image_3 == nil -%}<img src="{{ '1b19b97ee38eb905720a1e1a504e1ecf2x.png' | asset_url }}" loading="lazy" alt="" sizes="(max-width: 767px) 255.98959350585938px, (max-width: 991px) 28vw, (max-width: 1919px) 29vw, 440.3125305175781px" srcset="{{ '1b19b97ee38eb905720a1e1a504e1ecf2x-p-500.png' | asset_url }} 500w, {{ '1b19b97ee38eb905720a1e1a504e1ecf2x.png' | asset_url }} 794w" class="advantage-card-image">{%- else -%}<img src="{{ section.settings.advantage_card_image_image_3.src | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.advantage_card_image_image_3.alt | escape }}" class="advantage-card-image">{%- endif -%}</div>
+        <div class="card-text">
+          <h1 class="card-heading advantage-card-heading">{{ section.settings.card_heading_text_3 }}</h1>
+          <a href="/collections/all" class="btn card-btn w-button">{{ section.settings.btn_text_3 }}</a>
+        </div>
+      </div>
+    </div>
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("data-w-id","0b548dca-1b35-fb15-4cda-1bad3f1bb37c");currentSection.setAttribute("class","section advantage-section pl-2 wf-section");</script>
+{% schema %}
+{
+  "name": "Advantage Section",
+  "tag": "div",
+  "class": "section advantage-section pl-2 wf-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "btn_text_3",
+      "label": "btn - Text 3",
+      "default": "Buy catalog"
+    },
+    {
+      "id": "btn_link_3",
+      "label": "btn - Link 3",
+      "type": "url"
+    },
+    {
+      "type": "text",
+      "id": "card_heading_text_3",
+      "label": "Card Heading - Text 3",
+      "default": "Proudly made in India"
+    },
+    {
+      "type": "text",
+      "id": "btn_text_2",
+      "label": "btn - Text 2",
+      "default": "Learn more"
+    },
+    {
+      "id": "btn_link_2",
+      "label": "btn - Link 2",
+      "type": "url"
+    },
+    {
+      "type": "text",
+      "id": "card_heading_text_2",
+      "label": "Card Heading - Text 2",
+      "default": "Quality made "
+    },
+    {
+      "type": "image_picker",
+      "id": "advantage_card_image_image_2",
+      "label": "Advantage-Card-Image - Image 2"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "btn - Text",
+      "default": "See how"
+    },
+    {
+      "id": "btn_link",
+      "label": "btn - Link",
+      "type": "url"
+    },
+    {
+      "type": "text",
+      "id": "card_heading_text",
+      "label": "Card Heading - Text",
+      "default": "Family owned"
+    },
+    {
+      "type": "image_picker",
+      "id": "advantage_card_image_image",
+      "label": "Advantage-Card-Image - Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_visibility",
+      "label": "Card - Visibility",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading - Text",
+      "default": "The Chetna Advantage"
+    },
+    {
+      "type": "image_picker",
+      "id": "advantage_card_image_image_3",
+      "label": "Advantage-Card-Image - Image 3"
+    }
+  ]
+}
+{% endschema %}
